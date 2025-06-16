@@ -4,19 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>JoyCon</title>
 </head>
 <body>
-    <span style='font-size:70px;'>&#8743;</span>
-    <span style='font-size:70px;'>&#8744;</span>
-    <span style='font-size:70px;'>&#8882;</span>
-    <span style='font-size:70px;'>&#8883;</span>
-    <svg width="100" height="100"><circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
-
-    
-
-
+    <div class="display" id="display">Press a button</div>
+    <div class="controller">
+        <div class="left">
+            <button onclick="show('up')">up</button>
+            <div class="horizontal">
+                <button onclick="show('left')">left</button>
+                <button onclick="show('down')">down</button>
+                <button onclick="show('right')">right</button>
+            </div>
+        </div>
+        <div class="right">
+            <button onclick="show('A')">A</button>
+            <button onclick="show('B')">B</button>
+        </div>
+    </div>
+    <div><br>Malvin Joseph King</div><br>21430111</br><br>2b</br></div>
+    <script src="script.js"></script>
     <!-- buat komponen yang menggambarkan controller @MUTAMA -->
     <!--    [^]                -->
     <!-- [<][v][>]      [B][A] -->
